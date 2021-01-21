@@ -31,7 +31,7 @@ const ContestFilter = (props) => (
   </Filter>
 );
 
-export const ContestList = (props) => (
+export const ReportsList = (props) => (
   <List {...props} filters={<ContestFilter />}>
     <Datagrid>
       <TextField source="title" />
@@ -41,8 +41,8 @@ export const ContestList = (props) => (
         <TextField source="email" />
       </ReferenceField>
       <UrlField source="videoUrl" />
-      <TextField source="socialMedia" />
-      <TextField source="followerCount" />
+      <TextField source="reports" label="Total Reports" />
+      <TextField source="reportType" label="Report Type" />
       <ShowButton label="" />
       {/* <EditButton label="" /> */}
       <DeleteButton label="" redirect={false} />

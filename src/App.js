@@ -6,6 +6,7 @@ import {
   ContestList,
   ContestShow,
 } from "./contests";
+import { ReportsList } from "./reports";
 // import { CommentList, CommentShow, CommentCreate, CommentEdit } from "./comments";
 import { Admin, Resource } from "react-admin";
 import {
@@ -48,7 +49,7 @@ class App extends React.Component {
         />
         <Resource
           name="report"
-          list={ContestList}
+          list={ReportsList}
           show={ContestShow}
           create={ContestCreate}
           edit={ContestEdit}
